@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+    <style>
+      body {
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .search-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      input {
+        width: 300px;
+        height: 25px;
+        padding: 10px 20px;
+        border-radius: 25px 0 0 25px;
+        border: 1px solid #ddd;
+        font-size: 18px;
+        outline: none;
+      }
+      button {
+        width: 120px;
+        height: 45px;
+        border-radius: 0 25px 25px 0;
+        border: 1px solid #ddd;
+        background-color: #4caf50;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 0 20px;
+      }
+      .card {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      }
+      .card h3 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .card p {
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="search-container">
+      <input type="number" placeholder="Enter user ID" />
+      <button>Search</button>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <h3>One</h3>
+        <p>Sample description</p>
+      </div>
+      <div class="card">
+        <h3>Two</h3>
+        <p>Sample description</p>
+      </div>
+      <div class="card">
+        <h3>Three</h3>
+        <p>Sample description</p>
+      </div>
+      <div class="card">
+        <h3>Four</h3>
+        <p>Sample description</p>
+      </div>
+      <div class="card">
+        <h3>Five</h3>
+        <p>Sample description</p>
+      </div>
+      <div class="card">
+        <h3>Six</h3>
+        <p>Sample description</p>
+      </div>
+    </div>
+  </body>
+</html>
